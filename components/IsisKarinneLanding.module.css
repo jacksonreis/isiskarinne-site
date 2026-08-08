@@ -701,7 +701,7 @@
 
 @media (max-width:640px){
   .hero{
-    background: url('/imagens/Section1-mobile.webp');
+    background: url('/imagens/Section1-mobile.png');
     background-size: cover;
     background-position: center center;
     height: 600px;
