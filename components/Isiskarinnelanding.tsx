@@ -63,22 +63,20 @@ export default function IsisKarinneLanding() {
               Isis Karinne
             </div>
             <h1 className={styles.heroTitle}>
-              Acompanhamento nutricional materno-infantil para você viver a{" "}
-              <b><em>gestação</em></b>, o <b><em>pós-parto</em></b> e a introdução alimentar do seu bebê com segurança.
+             Acompanhamento nutricional completo para <b><em>gestação</em></b>, <b><em>pós-parto</em></b> e <b><em>introdução alimentar</em></b>.
             </h1>
             </AnimateIn>
             <AnimateIn direction="up" delay={0.6}>
             <p className={styles.heroDesc}>
-              Cada fase — tentante, gestante ou mãe de primeira viagem — pede um
-              cuidado diferente. Aqui você tem um plano nutricional feito para o
-              seu momento, sem fórmulas prontas e sem dúvidas na hora de alimentar
-              seu filho.
+              Da tentativa ao pós-parto, cada fase da maternidade exige um cuidado único.
+              Por isso, ofereço um plano nutricional 100% personalizado para o seu momento
+              — sem fórmulas prontas e sem inseguranças na hora de alimentar seu filho.
             </p>
             </AnimateIn>
             <AnimateIn direction="up" delay={0.6}>
             <div className={styles.heroCta}>
               <a href="https://api.whatsapp.com/message/SEU_LINK_AQUI?autoload=1&app_absent=0&utm_source=ig" className={styles.btn}>
-                Quero agendar minha consulta
+                Agendar minha consulta
                 <svg viewBox="0 0 24 24" fill="none" width="16" height="16">
                   <path d="M5 12h14M13 6l6 6-6 6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
