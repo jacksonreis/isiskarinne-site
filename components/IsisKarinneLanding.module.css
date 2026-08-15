@@ -698,14 +698,17 @@
     .aboutGrid {
       grid-template-columns: 1fr;
     align-items: center;
-    gap: 56px;
+    gap: 0px;
     display: grid;
     }
 
     .aboutPhoto {
+
+      /*
       background: linear-gradient(  #ffffff00 40%, #FFF0E9 100%), url('/imagens/Img-about.png');
       background-position: center;
       background-size: cover;
+      */
       border: none;
       margin: auto;
       
@@ -772,7 +775,7 @@
 
 @media (max-width:640px){
   .hero{
-    background: url('/imagens/Section1-mobile.png');
+    background: url('/imagens/f1.webp');
     background-size: cover;
     background-position: center center;
     height: 600px;
@@ -796,6 +799,12 @@
     font-size: 1.5rem;
     text-align: left;
     padding-left: 2px;
+  }
+
+  .about {
+    background: url('/imagens/f2.webp');
+    background-position: center;
+    background-size: cover;
   }
 
   .aboutPhoto {
@@ -849,7 +858,7 @@
     padding-top: 350px;
   }
   .finalCta{
-  background: url('/imagens/Section7-mobile.webp');
+  background: url('/imagens/f3.webp');
   background-position: center center;
   background-size: cover;
   padding-top:60px;
