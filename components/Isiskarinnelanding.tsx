@@ -159,7 +159,7 @@ export default function IsisKarinneLanding() {
         <div className={`${styles.container} ${styles.aboutGrid}`}>
           <div>
             <AnimateIn direction="right" delay={0.6}>
-            <h2 className={styles.eyebrow}>Quem sou Eu?</h2>
+            <h2 className={styles.eyebrow}>Sobre mim</h2>
             </AnimateIn>
             <AnimateIn direction="up" delay={0.6}>
             <p>
