@@ -16,6 +16,7 @@
   --orange: #C76826;
   --linear-h1: linear-gradient( 62deg, #C76826 32%, #B8987E 100%);
   --linear-gold: linear-gradient( 79deg, #C76826 0%, #F6C65C 100%);
+  --border-gray: #947e6e4d;
 
   color:var(--brown-ink);
   background:var(--cream-1);
@@ -247,6 +248,10 @@
 .cardWrapper {
   display: flex; /* faz o motion.div esticar e o filho (.card) acompanhar */
   height: 100%;
+  width: 100%;
+}
+.cardWrapper > * {
+  flex: 1; /* garante que o filho (.card ou .audienceItem) preencha toda a largura do wrapper */
 }
 .card{
   display: flex;
@@ -256,8 +261,8 @@
   background:var(--background-color);
   border: 1px solid transparent;
   border-image: var(--linear-gold) 1;
-  padding:30px 26px;
-  box-shadow: var(--shadow-soft);
+  padding:150px 26px 55px 26px;
+
 /*  box-shadow: 0 51px 14px 0px rgba(166, 166, 166, 0);
   box-shadow: 0 32px 13px 0px rgba(166, 166, 166, 0.01);
   box-shadow: 0 18px 11px 0px rgba(166, 166, 166, 0.05);
@@ -268,6 +273,22 @@
 .card:hover{
   transform:translateY(-6px);
   box-shadow:var(--shadow-soft);
+}
+
+.cardbg1 {
+  background: linear-gradient(  #ffffff00 0%, #FBEDD7 70%), url('/imagens/baby1.webp');
+  background-position: center;
+  background-size: cover;
+}
+.cardbg2 {
+  background: linear-gradient(  #ffffff00 0%, #FBEDD7 70%), url('/imagens/baby2.webp');
+  background-position: center;
+  background-size: cover;
+}
+.cardbg3 {
+  background: linear-gradient(  #ffffff00 0%, #FBEDD7 70%), url('/imagens/baby3.webp');
+  background-position: center;
+  background-size: cover;
 }
 
 .iconQuadrado {
@@ -401,15 +422,61 @@
 .audienceGrid{
   display:grid;
   grid-template-columns:repeat(2,1fr);
-  border:1px solid var(--line);
+
   overflow:hidden;
-  background-color: var(--background-color);
+  background-color: var(--background-color);               /* opcional, se quiser controlar o "traço" entre os cards */
+/*  background-color: var(--line);  usa o gap como linha divisória */
 }
 .audienceItem{
   padding:60px 35px;
-  border-right:1px solid var(--line);
-  border-bottom:1px solid var(--line);
+  background-color: var(--background-color); /* garante que cada item tenha fundo próprio */
+
 }
+
+.iframe {
+  max-width: 606px;
+  margin: auto;
+}
+
+.audienceItem1 {
+  border:1px solid var(--line);
+  border-right: none;
+  border-bottom: none;
+}
+.audienceItem2 {
+  border:1px solid var(--line);
+}
+.audienceItem3 {
+  border:1px solid var(--line);
+}
+.audienceItem4 {
+  border:1px solid var(--line);
+  border-left: none;
+  border-top: none;
+}
+
+/*
+.audienceItem1 {
+  background: linear-gradient(  #ffffff00 -10%, #FBEDD7 95%), url('/imagens/ft1.webp');
+  background-position: center;
+  background-size: cover;
+}
+.audienceItem2 {
+  background: linear-gradient(  #ffffff00 -10%, #FBEDD7 95%), url('/imagens/ft2.webp');
+  background-position: center;
+  background-size: cover;
+}
+.audienceItem3 {
+  background: linear-gradient(  #ffffff00 -10%, #FBEDD7 95%), url('/imagens/ft4.webp');
+  background-position: center;
+  background-size: cover;
+}
+.audienceItem4 {
+  background: linear-gradient(  #ffffff00 -10%, #FBEDD7 95%), url('/imagens/ft3.webp');
+  background-position: center;
+  background-size: cover;
+}
+*/
 
 .audienceItem p{
   font-size:1.05rem;
@@ -637,6 +704,10 @@
     }
 
     .aboutPhoto {
+      background: linear-gradient(  #ffffff00 40%, #FFF0E9 100%), url('/imagens/Img-about.png');
+      background-position: center;
+      background-size: cover;
+      border: none;
       margin: auto;
       
       background-position: 100% 0%;
@@ -645,6 +716,7 @@
       width: 100%;
       height: 400px;
       order: 1;
+      box-shadow: none;
     }
 
     .about h2 {

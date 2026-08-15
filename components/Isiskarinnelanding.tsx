@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { Playfair_Display, Cormorant_Garamond, Poppins } from "next/font/google";
 import styles from "./IsisKarinneLanding.module.css";
 import { AnimateIn } from "@/components/AnimateIn";
+import { InstagramEmbed } from "@/components/InstagramEmbed";
 import {
   Carousel,
   CarouselContent,
@@ -110,30 +111,42 @@ export default function IsisKarinneLanding() {
           
           <div className={styles.cardRow}>
             <AnimateIn direction="fade" delay={0.6} once={false} className={styles.cardWrapper}>
-            <div className={styles.card}>
+            <div className={`${styles.card} ${styles.cardbg1}`}>
               <div className={styles.iconCircle}>
                 <svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
               </div>
               <h3>Introdução Alimentar Segura</h3>
-              <p>Do primeiro papinha aos primeiros pedaços, você recebe um passo a passo claro para introduzir novos alimentos com segurança e confiança, no ritmo do seu bebê.</p>
+              <p>
+                Do primeiro papinha aos primeiros pedaços, você recebe
+                um passo a passo claro para introduzir novos alimentos com
+                segurança e confiança, no ritmo do seu bebê.
+              </p>
             </div>
             </AnimateIn>
             <AnimateIn direction="fade" delay={0.6} once={false} className={styles.cardWrapper}>
-            <div className={styles.card}>
+            <div className={`${styles.card} ${styles.cardbg2}`}>
               <div className={styles.iconCircle}>
                 <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M6 6l1 12a2 2 0 002 2h6a2 2 0 002-2l1-12M9 10v6M15 10v6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
               </div>
               <h3>Manejo da Seletividade Alimentar</h3>
-              <p>Estratégias práticas para lidar com a recusa alimentar e a seletividade, ampliando o paladar da criança sem transformar a hora da refeição em batalha.</p>
+              <p>
+                Estratégias práticas para lidar com a recusa alimentar e a
+                seletividade, ampliando o paladar da criança sem transformar
+                a hora da refeição em batalha.
+              </p>
             </div>
             </AnimateIn>
             <AnimateIn direction="fade" delay={0.6} once={false} className={styles.cardWrapper}>
-            <div className={styles.card}>
+            <div className={`${styles.card} ${styles.cardbg3}`}>
               <div className={styles.iconCircle}>
                 <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" strokeWidth="1.6" /><path d="M8 9h8M8 13h5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /></svg>
               </div>
               <h3>Suporte em Cada Fase</h3>
-              <p>Acompanhamento nutricional para tentantes, gestantes e mães no pós-parto, cuidando de você e do seu bebê em cada etapa dessa jornada.</p>
+              <p>
+                Acompanhamento nutricional para tentantes, gestantes e mães
+                no pós-parto, cuidando de você e do seu bebê em cada etapa
+                dessa jornada.
+              </p>
             </div>
             </AnimateIn>
           </div>
@@ -220,25 +233,25 @@ export default function IsisKarinneLanding() {
           </div>
           <div className={styles.audienceGrid}>
             <AnimateIn direction="fade" delay={0.6} once={false} className={styles.cardWrapper}>
-            <div className={styles.audienceItem}>
+            <div className= {`${styles.audienceItem} ${styles.audienceItem1}`}>
               <h3>Tentantes</h3>
               <p>Preparação nutricional do corpo para a gravidez.</p>
             </div>
             </AnimateIn>
             <AnimateIn direction="fade" delay={0.6} once={false} className={styles.cardWrapper}>
-            <div className={styles.audienceItem}>
+            <div className= {`${styles.audienceItem} ${styles.audienceItem2}`}>
               <h3>Gestantes</h3>
               <p>Nutrição equilibrada para uma gestação saudável.</p>
             </div>
             </AnimateIn>
             <AnimateIn direction="fade" delay={0.6} once={false} className={styles.cardWrapper}>
-            <div className={`${styles.audienceItem} ${styles.noBorderRight}`}>
+            <div className= {`${styles.audienceItem} ${styles.audienceItem3} ${styles.noBorderRight}`}>
               <h3>Pós-parto</h3>
               <p>Recuperação e suporte nutricional para a nova rotina com o bebê.</p>
             </div>
             </AnimateIn>
             <AnimateIn direction="fade" delay={0.6} once={false} className={styles.cardWrapper}>
-            <div className={`${styles.audienceItem} ${styles.noBorderRight}`}>
+            <div className= {`${styles.audienceItem} ${styles.audienceItem4} ${styles.noBorderRight}`}>
               <h3>Introdução Alimentar e Seletividade</h3>
               <p>Orientação prática para a primeira comida e para crianças seletivas.</p>
             </div>
@@ -246,10 +259,16 @@ export default function IsisKarinneLanding() {
           </div>
         </div>
       </section>
-
-      {/* ============ RESULTS CAROUSEL ============ */}
       <section className={styles.results}>
         <div className={styles.container}>
+          <div className={styles.iframe}>
+            <InstagramEmbed url="https://www.instagram.com/reel/DbUB1-_PbQv/" />
+          </div>
+        </div>
+     </section>
+      {/* ============ RESULTS CAROUSEL ============
+      
+        
           <AnimateIn direction="fade" delay={0.6}>
           <h2 className={styles.eyebrow}>Histórias Reais</h2>
           </AnimateIn>
@@ -265,7 +284,7 @@ export default function IsisKarinneLanding() {
                   className="basis-full sm:basis-1/2 md:basis-1/3"
                 >
                   <div className="relative aspect-[9/16] rounded-xl overflow-hidden border">
-                    {/* Troque pela imagem real do resultado */}
+                    {}
                     <Image
                       src={`/imagens/results/image${result.id}.jpg`}
                       alt={result.label}
@@ -284,10 +303,11 @@ export default function IsisKarinneLanding() {
           
         </div>
 
-      {/* <div className={styles.scrollCue}>
-          <svg viewBox="0 0 24 24" fill="none" width="16" height="16"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
-        </div> */}
+      
       </section>
+         */}
+
+
 
       {/* ============ O QUE MUDA ============ */}
       <section className={styles.changes}>
