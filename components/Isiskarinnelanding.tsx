@@ -69,9 +69,10 @@ export default function IsisKarinneLanding() {
             </AnimateIn>
             <AnimateIn direction="up" delay={0.6}>
             <p className={styles.heroDesc}>
-              Da tentativa ao pós-parto, cada fase da maternidade exige um cuidado único.
-              Por isso, ofereço um plano nutricional 100% personalizado para o seu momento
-              — sem fórmulas prontas e sem inseguranças na hora de alimentar seu filho.
+              Cada fase da maternidade merece um cuidado especial. 
+              Tenha um acompanhamento nutricional personalizado para viver a gestação,
+              o pós-parto e a introdução alimentar com mais segurança, leveza e tranquilidade.
+
             </p>
             </AnimateIn>
             <AnimateIn direction="up" delay={0.6}>
@@ -259,13 +260,15 @@ export default function IsisKarinneLanding() {
           </div>
         </div>
       </section>
+      {/*
       <section className={styles.results}>
         <div className={styles.container}>
           <div className={styles.iframe}>
             <InstagramEmbed url="https://www.instagram.com/reel/DbUB1-_PbQv/" />
           </div>
         </div>
-     </section>
+      </section>
+      */}
       {/* ============ RESULTS CAROUSEL ============
       
         

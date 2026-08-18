@@ -69,7 +69,7 @@
 /* ============ HERO ============ */
 .hero{
   position:absolute;
-  background: url('/imagens/Section1.png');
+  background: url('/imagens/Pc1.webp');
   align-items: center;
   display: flex;
   overflow:hidden;
@@ -276,17 +276,17 @@
 }
 
 .cardbg1 {
-  background: linear-gradient(  #ffffff00 20%, #FBEDD7 70%), url('/imagens/baby1.webp');
+  background: linear-gradient(  #ffffff00 20%, #FBE6B2 70%), url('/imagens/baby1.webp');
   background-position: center;
   background-size: cover;
 }
 .cardbg2 {
-  background: linear-gradient(  #ffffff00 20%, #FBEDD7 70%), url('/imagens/baby2.webp');
+  background: linear-gradient(  #ffffff00 20%, #FBE6B2 70%), url('/imagens/baby2.webp');
   background-position: center;
   background-size: cover;
 }
 .cardbg3 {
-  background: linear-gradient(  #ffffff00 20%, #FBEDD7 70%), url('/imagens/baby3.webp');
+  background: linear-gradient(  #ffffff00 20%, #FBE6B2 70%), url('/imagens/baby3.webp');
   background-position: center;
   background-size: cover;
 }
@@ -339,8 +339,10 @@
 
 /* ============ ABOUT ============ */
 .about{
-  background:var(--background-color);
-  padding:90px 0;
+  background: url('/imagens/Pc2.webp');
+  background-position: center;
+  background-size: cover;
+  padding: 150px 0;
 }
 .aboutGrid{
   display:grid;
@@ -390,6 +392,9 @@
   font-size:0.8rem;
    color:var(--color-p);
 }
+
+
+/*
 .aboutPhoto{
 
   background: url('/imagens/isis-about.webp');
@@ -411,6 +416,8 @@
   width: 100%;
   height: 100%;
 }
+*/
+
 
 /* ============ PARA QUEM ============ */
 .audience{
@@ -419,17 +426,18 @@
 }
 .audienceTitle{margin-bottom:50px;}
 .audienceGrid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0px;
 
-  overflow:hidden;
-  background-color: var(--background-color);               /* opcional, se quiser controlar o "traço" entre os cards */
+  overflow: hidden;             /* opcional, se quiser controlar o "traço" entre os cards */
 /*  background-color: var(--line);  usa o gap como linha divisória */
 }
 .audienceItem{
-  padding:60px 35px;
-  background-color: var(--background-color); /* garante que cada item tenha fundo próprio */
-
+    border: 1px solid var(--line);
+ min-width: 0;
+  padding: 60px 35px;
+  background-color: var(--background-color)
 }
 
 .iframe {
@@ -437,22 +445,7 @@
   margin: auto;
 }
 
-.audienceItem1 {
-  border:1px solid var(--line);
-  border-right: none;
-  border-bottom: none;
-}
-.audienceItem2 {
-  border:1px solid var(--line);
-}
-.audienceItem3 {
-  border:1px solid var(--line);
-}
-.audienceItem4 {
-  border:1px solid var(--line);
-  border-left: none;
-  border-top: none;
-}
+
 
 /*
 .audienceItem1 {
@@ -601,7 +594,7 @@
 /* ============ FINAL CTA ============ */
 .finalCta{
   position:relative;
-  background:url('/imagens/Section7.webp');
+  background:url('/imagens/Pc3.webp');
   background-position: center center;
   background-size: cover;
   display: flex;
@@ -686,8 +679,19 @@
 
 @media (max-width:860px){
 
+  .cardRow {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+  .cardRow > :nth-child(3) {
+  grid-column: 1 / -1;
+  width: 100%;
+  justify-self: center;
+  }
+
   .about {
-    padding: 0px;
+    padding: 60px 0px;
   }
 
     .aboutGrid > div:first-child {
@@ -697,9 +701,10 @@
 
     .aboutGrid {
       grid-template-columns: 1fr;
-    align-items: center;
-    gap: 0px;
-    display: grid;
+      gap: 0px;
+      display: grid;
+      padding: 0px 50px;
+      align-items: center;
     }
 
     .aboutPhoto {
@@ -726,20 +731,33 @@
     }
 
   .hero {
-    background: url('/imagens/Section1-tablet.webp');
+    background: url('/imagens/h1.jpg');
     background-position: center center;
     background-size: cover;
   }
 
   .finalGrid{
-    padding-top: 440px;
+    padding-top: 350px;
     grid-template-columns:1fr;
     text-align:center;
   }
-  .finalCopy p,.finalCopy h2{margin-left:auto;margin-right:auto;}
+  .finalCopy p,.finalCopy h2{
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .finalCopy p {
+    max-width: 500px;
+  }
 
   .eyebrow {
     max-width: 510px;
+  }
+
+  .about {
+    background: url('/imagens/h2.jpg');
+    background-position: center;
+    background-size: cover;
   }
 
   .heroDesc, .heroTitle {
@@ -755,20 +773,25 @@
   }
 
   .finalCta{
-  background: url('/imagens/Section7-tablet.webp');
+  background: url('/imagens/h3.jpg');
   background-size: cover;
-  background-position: -120px;
+  background-position: center;
   }
   .heroGrid{
-    padding-top: 375px;
+    padding-top: 275px;
     grid-template-columns:1fr;
     text-align:center;
     }
 /*  .cardRow{
     grid-template-columns:1fr;
   } */
-  .audienceGrid{grid-template-columns:2fr, 2fr;}
-  .audienceItem{border-right:none !important;}
+  .audienceGrid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .audienceItem{
+    padding: 50px 30px;
+  /*  border-right:none !important; */
+  }
   .carouselSlide{flex:0 0 calc(50% - 10px);}
   .heroBadges{position:static; flex-direction:row; justify-content:center; flex-wrap:wrap; margin-bottom:16px;}
 }
@@ -781,6 +804,17 @@
     height: 600px;
   }
 
+
+  .cardRow {
+    grid-template-columns: 1fr;
+  }
+
+  .cardRow > :nth-child(3) {
+    grid-column: auto;
+    width: 100%;
+  }
+
+
   .audienceGrid{grid-template-columns:1fr;}
 
   .cardRow{
@@ -789,6 +823,15 @@
 
   .audienceItem {
     padding: 40px 25px;
+  }
+  .audienceItem2 {
+    border-top: none;
+  }
+  .audienceItem3 {
+    border-top: none;
+  }
+  .audienceItem4 {
+    border-top: none;
   }
 
   .heroGrid{
@@ -805,6 +848,10 @@
     background: url('/imagens/f2.webp');
     background-position: center;
     background-size: cover;
+  }
+
+  .aboutGrid {
+    padding: 0px 24px;
   }
 
   .aboutPhoto {
