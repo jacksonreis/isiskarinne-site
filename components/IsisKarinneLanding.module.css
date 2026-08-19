@@ -12,7 +12,7 @@
   --shadow-soft: 0 20px 50px -20px rgba(120,80,30,0.25);
 
   --background-color: #FFF0E9;
-  --color-p: #947E6E;
+  --color-p: #80634d;
   --orange: #C76826;
   --linear-h1: linear-gradient( 62deg, #C76826 32%, #B8987E 100%);
   --linear-gold: linear-gradient( 79deg, #C76826 0%, #F6C65C 100%);
@@ -276,17 +276,17 @@
 }
 
 .cardbg1 {
-  background: linear-gradient(  #ffffff00 20%, #FBE6B2 70%), url('/imagens/baby1.webp');
+  background: linear-gradient(  #ffffff00 20%, #ffe6a2 70%), url('/imagens/baby1.webp');
   background-position: center;
   background-size: cover;
 }
 .cardbg2 {
-  background: linear-gradient(  #ffffff00 20%, #FBE6B2 70%), url('/imagens/baby2.webp');
+  background: linear-gradient(  #ffffff00 20%, #ffe6a2 70%), url('/imagens/baby2.webp');
   background-position: center;
   background-size: cover;
 }
 .cardbg3 {
-  background: linear-gradient(  #ffffff00 20%, #FBE6B2 70%), url('/imagens/baby3.webp');
+  background: linear-gradient(  #ffffff00 20%, #ffe6a2 70%), url('/imagens/baby3.webp');
   background-position: center;
   background-size: cover;
 }
@@ -441,8 +441,17 @@
 }
 
 .iframe {
-  max-width: 606px;
+  box-shadow: var(--shadow-soft);
+ /* max-width: 545px;*/
   margin: auto;
+  width: 70%;
+}
+
+.iframe iframe {
+  width: 100%;
+  height: 550px; /* ajuste conforme necessário */
+  display: block;
+  align-items: center;
 }
 
 
@@ -479,7 +488,7 @@
 /* ============ RESULTS CAROUSEL ============ */
 .results{
   background:var(--background-color);
-  padding:140px 0 150px;
+  padding:190px 0 40px;
   text-align:center;
 }
 .carousel{
@@ -731,7 +740,7 @@
     }
 
   .hero {
-    background: url('/imagens/h1.jpg');
+    background: url('/imagens/t1.webp');
     background-position: center center;
     background-size: cover;
   }
@@ -755,7 +764,7 @@
   }
 
   .about {
-    background: url('/imagens/h2.jpg');
+    background: url('/imagens/t2.webp');
     background-position: center;
     background-size: cover;
   }
@@ -773,7 +782,7 @@
   }
 
   .finalCta{
-  background: url('/imagens/h3.jpg');
+  background: url('/imagens/t3.webp');
   background-size: cover;
   background-position: center;
   }
@@ -814,7 +823,18 @@
     width: 100%;
   }
 
+  .iframe {
+    width: 100%;
+    height: 588px;
+   /* ou o valor que fizer sentido no mobile */
+}
 
+.iframe div {
+  height: 100%;
+}
+.iframe div iframe {
+  height: 100%;
+}
   .audienceGrid{grid-template-columns:1fr;}
 
   .cardRow{
@@ -890,6 +910,12 @@
     font-size:0.88rem;
   }
   .benefits,.about,.audience,.results,.changes{padding-top:60px;padding-bottom:60px;}
+
+  .results {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
   .changes {
     background: none;
     background-color: var(--background-color);
@@ -908,8 +934,6 @@
   background: url('/imagens/f3.webp');
   background-position: center center;
   background-size: cover;
-  padding-top:60px;
-  height: 850px;
 }
 
 .finalCopy p {

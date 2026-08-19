@@ -5,7 +5,8 @@ import { useEffect, useRef, useState } from "react";
 import { Playfair_Display, Cormorant_Garamond, Poppins } from "next/font/google";
 import styles from "./IsisKarinneLanding.module.css";
 import { AnimateIn } from "@/components/AnimateIn";
-import { InstagramEmbed } from "@/components/InstagramEmbed";
+import InstagramReelEmbed from '@/components/InstagramReelEmbed';
+
 import {
   Carousel,
   CarouselContent,
@@ -214,6 +215,17 @@ export default function IsisKarinneLanding() {
           </AnimateIn>
         </div>
       </section>
+      
+
+      {/* ============ Video ============ */}
+      <section className={styles.results}>
+        <div className={styles.container}>
+          <div className={styles.iframe}>
+            <InstagramReelEmbed />
+          </div>
+        </div>
+      </section>
+
 
       {/* ============ PARA QUEM ============ */}
       <section className={styles.audience}>
@@ -260,6 +272,9 @@ export default function IsisKarinneLanding() {
           </div>
         </div>
       </section>
+      
+      
+      
       {/*
       <section className={styles.results}>
         <div className={styles.container}>
