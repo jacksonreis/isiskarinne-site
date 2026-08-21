@@ -217,14 +217,37 @@ export default function IsisKarinneLanding() {
       </section>
       
 
-      {/* ============ Video ============ */}
+      <section className={styles.results}>
+        <div className={styles.container}>
+          
+          <video
+          className={styles.videoPc}
+            controls
+            playsInline
+            preload="metadata"
+            style={{ width: "100%", height: "auto" }}>
+            <source src="/videos/video-iris2.mp4" type="video/mp4" />
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+          <video
+            className={styles.videoMobile}
+            controls
+            playsInline
+            controlsList="nofullscreen noremoteplayback"
+            disablePictureInPicture
+            preload="metadata">
+            <source src="/videos/video-iris.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+      {/* ============ Video ============ 
       <section className={styles.results}>
         <div className={styles.container}>
           <div className={styles.iframe}>
             <InstagramReelEmbed />
           </div>
         </div>
-      </section>
+      </section>*/}
 
 
       {/* ============ PARA QUEM ============ */}

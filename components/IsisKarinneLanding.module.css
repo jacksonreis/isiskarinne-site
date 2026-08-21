@@ -33,6 +33,10 @@
   padding:0 24px;
 }
 
+  .videoMobile {
+    display: none;
+  }
+
 .script{
   font-style:italic;
   color:var(--gold-deep);
@@ -811,6 +815,17 @@
     background-size: cover;
     background-position: center center;
     height: 600px;
+  }
+
+    .videoPc {
+    display: none;
+  }
+
+  .videoMobile {
+    display: block;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    border-radius: 20px;
   }
 
 
