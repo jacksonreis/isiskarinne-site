@@ -45,7 +45,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="pt-BR"
       className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, merriweather.variable, dmSans.variable, "font-sans", inter.variable)}
     >
       <body className="min-h-full flex flex-col">{children}</body>

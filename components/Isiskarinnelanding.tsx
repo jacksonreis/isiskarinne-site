@@ -235,6 +235,7 @@ export default function IsisKarinneLanding() {
             playsInline
             controlsList="nofullscreen noremoteplayback"
             disablePictureInPicture
+            poster="/images/video-capa.jpg"
             preload="metadata">
             <source src="/videos/video-iris.mp4" type="video/mp4" />
           </video>
