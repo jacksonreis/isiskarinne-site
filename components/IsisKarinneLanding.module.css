@@ -33,6 +33,8 @@
   padding:0 24px;
 }
 
+
+
   .videoMobile {
     display: none;
   }
@@ -346,7 +348,7 @@
   background: url('/imagens/Pc2.webp');
   background-position: center;
   background-size: cover;
-  padding: 150px 0;
+  padding: 170px 0;
 }
 .aboutGrid{
   display:grid;

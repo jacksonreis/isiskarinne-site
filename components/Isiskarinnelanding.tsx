@@ -7,6 +7,7 @@ import styles from "./IsisKarinneLanding.module.css";
 import { AnimateIn } from "@/components/AnimateIn";
 import InstagramReelEmbed from '@/components/InstagramReelEmbed';
 
+
 import {
   Carousel,
   CarouselContent,
@@ -52,6 +53,36 @@ const results = [
 
 
 export default function IsisKarinneLanding() {
+
+ useEffect(() => {
+  const videos = document.querySelectorAll(
+    "#videoPc, #videoBlur, #videoMobile"
+  ) as NodeListOf<HTMLVideoElement>;
+
+  const observers: IntersectionObserver[] = [];
+
+  videos.forEach((video) => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      },
+      {
+        threshold: 0.3,
+      }
+    );
+
+    observer.observe(video);
+    observers.push(observer);
+  });
+
+  return () => {
+    observers.forEach((observer) => observer.disconnect());
+  };
+}, []);
 
   return (
     <div className={`${styles.page} ${playfair.variable} ${cormorant.variable} ${poppins.variable}`}>
@@ -165,7 +196,7 @@ export default function IsisKarinneLanding() {
             </AnimateIn>
             <AnimateIn direction="up" delay={0.6}>
             <p>
-              Sou nutricionista graduada com especialização em{" "}
+              Sou nutricionista com especialização em{" "}
               <strong>Nutrição Materno-Infantil</strong>, e dedico meu trabalho a
               acompanhar mães e famílias desde o desejo de engravidar até os
               primeiros anos de vida do bebê. Cada orientação que eu passo é
@@ -176,12 +207,13 @@ export default function IsisKarinneLanding() {
               Atendo tanto quem está tentando engravidar e precisa preparar o
               corpo para essa fase, quanto gestantes que buscam uma gravidez mais
               tranquila e mães que estão vivendo a introdução alimentar ou a
-              seletividade dos filhos, com atendimento em Fortaleza-CE e
-              Mossoró-RN.
+              seletividade dos filhos que possuem TEA, TDAH e Síndrome de Down. Com atendimento presencial em Fortaleza-CE e
+              online para todo o Brasil.
             </p>
             </AnimateIn>
 
             <div className={styles.aboutCreds}>
+              {/*
               <AnimateIn direction="up" delay={0.5}>
               <div className={styles.cred}>
                 <div className={styles.iconCircle}>
@@ -193,6 +225,7 @@ export default function IsisKarinneLanding() {
                 </div>
               </div>
               </AnimateIn>
+              */}
               <AnimateIn direction="up" delay={0.6}>
               <div className={styles.cred}>
                 <div className={styles.iconCircle}>
@@ -220,17 +253,22 @@ export default function IsisKarinneLanding() {
       <section className={styles.results}>
         <div className={styles.container}>
           
-          <video
-          className={styles.videoPc}
-            controls
-            playsInline
-            preload="metadata"
-            style={{ width: "100%", height: "auto" }}>
-            <source src="/videos/video-iris2.mp4" type="video/mp4" />
-            Seu navegador não suporta a reprodução de vídeos.
-          </video>
+          <div className={styles.containerVideo}>         
+            
+            <video
+            className={styles.videoPc}
+            id="videoPc"
+            
+              playsInline
+              preload="metadata"
+              style={{ width: "100%", height: "auto" }}>
+              <source src="/videos/video-iris2.mp4" type="video/mp4" />
+              Seu navegador não suporta a reprodução de vídeos.
+            </video>
+          </div>
           <video
             className={styles.videoMobile}
+            id="videoMobile"
             controls
             playsInline
             controlsList="nofullscreen noremoteplayback"
