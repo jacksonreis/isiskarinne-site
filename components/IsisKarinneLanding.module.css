@@ -322,6 +322,15 @@
   width:18px;
   height:18px;
 }
+
+.iconAcomp {
+  width:24px;height:24px;
+
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:7px;
+  color:var(--terracotta);
+}
+
 .card h3, .audienceItem h3, .changesRow h3{
   background: var(--linear-gold);
   color: #0000;
@@ -440,12 +449,17 @@
 /*  background-color: var(--line);  usa o gap como linha divisória */
 }
 .audienceItem{
-    border: 1px solid var(--line);
- min-width: 0;
+  border: 1px solid var(--line);
+  min-width: 0;
   padding: 60px 35px;
-  background-color: var(--background-color)
+  background-color: var(--background-color);
+  transition: transform .25s ease, box-shadow .25s ease;
 }
 
+.audienceItem:hover{
+  transform:translateY(-6px);
+  box-shadow:var(--shadow-soft);
+}
 .iframe {
   box-shadow: var(--shadow-soft);
  /* max-width: 545px;*/
