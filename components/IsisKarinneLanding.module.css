@@ -569,7 +569,7 @@
 /* ============ WHAT CHANGES ============ */
 .changes{
   background-color: var(--background-color);
-  padding:130px 0 265px 0;
+  padding:130px 0 130px 0;
 }
 .changesTitle{
   font-style:italic;
@@ -618,6 +618,161 @@
   font-size:1.05rem;
   color:var(--color-p);
   line-height: 140%;
+}
+
+/* ============ FAQ ============ */
+
+.Faq {
+  background-color: var(--background-color);
+  padding: 120px 0 220px;
+}
+
+.faqHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.faqTag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 165px;
+  padding: 12px 28px;
+
+  border: 1px solid var(--orange);
+  border-radius: 4px;
+
+  color: var(--orange);
+  font-family: var(--font-poppins);
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  margin-bottom: 25px;
+}
+
+.faqTitle {
+  font-family: var(--font-merriweather);
+  font-size: clamp(2.2rem, 4vw, 3.3rem);
+  font-weight: 300;
+  line-height: 110%;
+  letter-spacing: -2px;
+
+  background: var(--linear-gold);
+  color: #0000;
+  background-clip: text;
+
+  margin: 0;
+}
+
+.faqList {
+  max-width: 1050px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cardFaq {
+  width: 100%;
+
+  border: 1px solid rgba(148, 126, 110, 0.22);
+  background-color: var(--background-color);
+
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+    
+}
+
+.cardFaq[open] {
+  background-color: #fff4e5;
+  border-color: rgba(148, 126, 110, 0.25);
+}
+
+.cardFaq summary {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-height: 115px;
+
+  padding: 30px 30px 30px 30px;
+
+  cursor: pointer;
+  list-style: none;
+
+  font-family: var(--font-merriweather);
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  font-weight: 400;
+  line-height: 120%;
+
+  background: var(--linear-gold);
+  color: #0000;
+  background-clip: text;
+}
+
+.cardFaq summary::-webkit-details-marker {
+  display: none;
+}
+
+.cardFaq summary::after {
+  content: "↗";
+
+  flex-shrink: 0;
+
+  width: 44px;
+  height: 44px;
+
+  margin-left: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--orange);
+  border-radius: 10px;
+
+  color: var(--orange);
+
+  font-family: Arial, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.cardFaq[open] summary::after {
+  content: "↘";
+
+  background: var(--orange);
+  color: #fff;
+
+  transform: rotate(0deg);
+}
+
+.cardFaq summary:hover::after {
+  background: var(--orange);
+  color: #fff;
+}
+
+.cardFaq p {
+  max-width: 700px;
+
+  margin: 0;
+  padding: 0 30px 32px;
+
+  color: var(--color-p);
+
+  font-family: var(--font-poppins);
+  font-size: 1rem;
+  line-height: 150%;
 }
 
 /* ============ FINAL CTA ============ */
@@ -957,6 +1112,51 @@
     font-size: 1.4rem;
     line-height: 115%;
   }
+
+  .Faq {
+  padding: 80px 0 90px;
+}
+
+.faqHeader {
+  margin-bottom: 35px;
+}
+
+.faqTag {
+  min-width: 130px;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+}
+
+.faqTitle {
+  font-size: 2rem;
+  letter-spacing: -1px;
+}
+
+.faqList {
+  gap: 10px;
+}
+
+.cardFaq summary {
+  min-height: 90px;
+  padding: 28px 20px;
+  gap: 30px;
+
+  font-size: 1.15rem;
+}
+
+.cardFaq summary::after {
+  width: 34px;
+  height: 34px;
+
+  margin-left: 15px;
+
+  font-size: 1rem;
+}
+
+.cardFaq p {
+  padding: 0 20px 25px;
+  font-size: 0.95rem;
+}
 
   .finalGrid {
     padding-top: 350px;

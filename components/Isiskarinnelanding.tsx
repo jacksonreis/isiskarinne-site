@@ -451,6 +451,88 @@ export default function IsisKarinneLanding() {
         </div>
       </section>
 
+      {/* ============ FAQ ============ */}
+<section className={styles.Faq} id="faq">
+  <div className={styles.container}>
+
+    <div className={styles.faqHeader}>
+      <AnimateIn direction="fade" delay={0.6}>
+      <h2 className={styles.eyebrow}>
+        Perguntas Frequentes
+      </h2>
+      </AnimateIn>
+    </div>
+
+    <div className={styles.faqList}>
+      <AnimateIn direction="fade" delay={0.6}>
+      <details className={styles.cardFaq} open>
+        <summary>
+          Preciso seguir uma dieta muito restritiva?
+        </summary>
+
+        <p>
+          Não. O acompanhamento é pensado para criar uma alimentação
+          equilibrada e possível de manter, respeitando sua rotina,
+          preferências e necessidades.
+        </p>
+      </details>
+      </AnimateIn>
+      <AnimateIn direction="fade" delay={0.6}>
+      <details className={styles.cardFaq}>
+        <summary>
+          Como funciona o acompanhamento para gestantes?
+        </summary>
+
+        <p>
+          O acompanhamento é individual e acompanha cada fase da gestação,
+          com ajustes na alimentação conforme os sintomas, exames, rotina
+          e necessidades da mãe e do bebê.
+        </p>
+      </details>
+      </AnimateIn>
+      <AnimateIn direction="fade" delay={0.6}>
+      <details className={styles.cardFaq}>
+        <summary>
+          O acompanhamento também é para crianças?
+        </summary>
+
+        <p>
+          Sim. O acompanhamento também pode auxiliar na introdução alimentar,
+          seletividade alimentar e construção de uma relação mais saudável
+          da criança com os alimentos.
+        </p>
+      </details>
+      </AnimateIn>
+      <AnimateIn direction="fade" delay={0.6}>
+      <details className={styles.cardFaq}>
+        <summary>
+          Atende mães no pós-parto?
+        </summary>
+
+        <p>
+          Sim. O acompanhamento considera as mudanças dessa fase, ajudando
+          a cuidar da alimentação da mãe e oferecendo suporte nutricional
+          para essa nova rotina.
+        </p>
+      </details>
+      </AnimateIn>
+      <AnimateIn direction="fade" delay={0.6}>
+      <details className={styles.cardFaq}>
+        <summary>
+          O atendimento pode ser feito online?
+        </summary>
+
+        <p>
+          Sim. O atendimento é realizado presencialmente em Fortaleza-CE
+          e também de forma online para todo o Brasil.
+        </p>
+      </details>
+      </AnimateIn>
+    </div>
+
+  </div>
+</section>
+
       {/* ============ FINAL CTA ============ */}
       
       <section className={styles.finalCta} id="cta">
