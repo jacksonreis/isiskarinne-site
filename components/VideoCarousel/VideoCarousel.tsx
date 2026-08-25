@@ -6,23 +6,28 @@ import styles from "./VideoCarousel.module.css";
 const videos = [
   {
     id: 1,
-    src: "/videos/video-iris.mp4",
+    src: "/videos/reel1.mp4",
+    poster: "/imagens/cap1.jpg",
   },
   {
     id: 2,
-    src: "/videos/video-iris.mp4",
+    src: "/videos/reel2.mp4",
+    poster: "/imagens/cap2.jpg",
   },
   {
     id: 3,
-    src: "/videos/video-iris.mp4",
+    src: "/videos/reel3.mp4",
+    poster: "/imagens/cap3.jpg",
   },
   {
     id: 4,
-    src: "/videos/video-iris.mp4",
+    src: "/videos/reel4.mp4",
+    poster: "/imagens/cap4.jpg",
   },
   {
     id: 5,
-    src: "/videos/video-iris.mp4",
+    src: "/videos/reel5.mp4",
+    poster: "/imagens/cap5.jpg",
   },
 ];
 
@@ -70,9 +75,9 @@ export default function VideoCarousel() {
           >
             <video
               src={video.src}
+              controls
               muted={false}
               playsInline
-              poster="/imagens/video-capa.jpg"
               preload="metadata"
               onClick={(event) =>
                 handlePlay(event.currentTarget, video.id)
