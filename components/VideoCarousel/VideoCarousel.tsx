@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import styles from "./VideoCarousel.module.css";
 
 const videos = [
@@ -32,40 +32,63 @@ const videos = [
 ];
 
 export default function VideoCarousel() {
-  const [playingId, setPlayingId] = useState<number | null>(null);
+  const [playingIndex, setPlayingIndex] = useState<number | null>(null);
+
+  const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
 
   const duplicatedVideos = [...videos, ...videos];
 
-  const handlePlay = (
-    videoElement: HTMLVideoElement,
-    id: number
-  ) => {
-    // Para qualquer outro vídeo
-    document.querySelectorAll("video").forEach((video) => {
-      if (video !== videoElement) {
-        video.pause();
-        video.currentTime = 0;
+  const handleVideoClick = (index: number) => {
+    const video = videoRefs.current[index];
+
+    if (!video) return;
+
+    /*
+     * Se este vídeo já está tocando:
+     * pausa o vídeo e libera o carrossel.
+     */
+    if (playingIndex === index && !video.paused) {
+      video.pause();
+      setPlayingIndex(null);
+
+      return;
+    }
+
+    /*
+     * Para qualquer outro vídeo do NOVO CARROSSEL.
+     */
+    videoRefs.current.forEach((otherVideo, otherIndex) => {
+      if (otherVideo && otherIndex !== index) {
+        otherVideo.pause();
       }
     });
 
-    // Para o movimento do carrossel
-    setPlayingId(id);
+    /*
+     * Define este vídeo como ativo.
+     */
+    setPlayingIndex(index);
 
-    // Começa o vídeo
-    videoElement.play();
+    /*
+     * Reproduz o vídeo clicado.
+     */
+    video.play().catch(() => {});
   };
 
-  const handleEnd = () => {
-    // Quando o vídeo terminar,
-    // libera novamente o movimento
-    setPlayingId(null);
+  const handleVideoEnded = (index: number) => {
+    /*
+     * Só libera o carrossel se o vídeo que terminou
+     * for realmente o vídeo que estava ativo.
+     */
+    if (playingIndex === index) {
+      setPlayingIndex(null);
+    }
   };
 
   return (
     <section className={styles.carousel}>
       <div
         className={`${styles.track} ${
-          playingId !== null ? styles.paused : ""
+          playingIndex !== null ? styles.paused : ""
         }`}
       >
         {duplicatedVideos.map((video, index) => (
@@ -74,15 +97,14 @@ export default function VideoCarousel() {
             key={`${video.id}-${index}`}
           >
             <video
+              ref={(element) => {
+                videoRefs.current[index] = element;
+              }}
               src={video.src}
-              controls
-              muted={false}
               playsInline
               preload="metadata"
-              onClick={(event) =>
-                handlePlay(event.currentTarget, video.id)
-              }
-              onEnded={handleEnd}
+              onClick={() => handleVideoClick(index)}
+              onEnded={() => handleVideoEnded(index)}
             />
           </div>
         ))}

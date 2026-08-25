@@ -15,7 +15,7 @@
   animation: scroll 90s linear infinite;
 }
 
-@media (max-width:640px){
+@media (max-width:640px) {
   .track {
     animation: scroll 45s linear infinite;
   }

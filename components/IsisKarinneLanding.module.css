@@ -1110,6 +1110,7 @@
   .cardFaq summary svg {
   width: 35px;
   height: 35px;
+  border: 1.4px solid var(--terracotta);
 }
 
   .Faq {
@@ -1165,7 +1166,7 @@
 }
 
   .finalGrid {
-    padding-top: 350px;
+    padding-top: 370px;
   }
   .finalCta{
   background: url('/imagens/f3.webp');

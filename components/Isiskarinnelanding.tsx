@@ -128,7 +128,7 @@ export default function IsisKarinneLanding() {
       <section className={styles.benefits}>
         <div className={styles.container}>
           <div className={styles.benefitsTitle}>
-            <AnimateIn direction="up" delay={0.6}>
+            <AnimateIn direction="up" delay={0.5}>
             <h2 className={styles.eyebrow}>
               Cuide da Alimentação da Sua Família com
               Quem Entende de Cada Fase
@@ -144,7 +144,7 @@ export default function IsisKarinneLanding() {
           </div>
           
           <div className={styles.cardRow}>
-            <AnimateIn direction="up" delay={0.6} once={false} className={styles.cardWrapper}>
+            <AnimateIn direction="fade" delay={0.6} once={false} className={styles.cardWrapper}>
             <div className={`${styles.card} ${styles.cardbg1}`}>
               <div className={styles.iconCircle}>
                 <svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
@@ -157,7 +157,7 @@ export default function IsisKarinneLanding() {
               </p>
             </div>
             </AnimateIn>
-            <AnimateIn direction="up" delay={0.6} once={false} className={styles.cardWrapper}>
+            <AnimateIn direction="fade" delay={0.6} once={false} className={styles.cardWrapper}>
             <div className={`${styles.card} ${styles.cardbg2}`}>
               <div className={styles.iconCircle}>
                 <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M6 6l1 12a2 2 0 002 2h6a2 2 0 002-2l1-12M9 10v6M15 10v6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
@@ -170,7 +170,7 @@ export default function IsisKarinneLanding() {
               </p>
             </div>
             </AnimateIn>
-            <AnimateIn direction="up" delay={0.6} once={false} className={styles.cardWrapper}>
+            <AnimateIn direction="fade" delay={0.6} once={false} className={styles.cardWrapper}>
             <div className={`${styles.card} ${styles.cardbg3}`}>
               <div className={styles.iconCircle}>
                 <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" strokeWidth="1.6" /><path d="M8 9h8M8 13h5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /></svg>
