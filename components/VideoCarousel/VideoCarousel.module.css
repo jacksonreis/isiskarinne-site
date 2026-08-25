@@ -12,7 +12,11 @@
   gap: 20px;
   width: max-content;
 
-  animation: scroll 90s linear infinite;
+  animation: scroll 30s linear infinite;
+}
+
+.track.paused {
+  animation-play-state: paused;
 }
 
 .videoCard {
@@ -21,13 +25,14 @@
   aspect-ratio: 9 / 16;
   overflow: hidden;
   border-radius: 18px;
+  cursor: pointer;
+  background: #000;
 }
 
 .videoCard video {
   width: 100%;
   height: 100%;
   display: block;
-
   object-fit: cover;
 }
 
