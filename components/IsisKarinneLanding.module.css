@@ -126,7 +126,7 @@
   font-weight:600;
 }
 .heroDesc{
-  margin-top:40px;
+  margin-top:30px;
 
   color:var(--color-p);
   font-size: 1.1rem;
@@ -180,7 +180,7 @@
 }
 
 .btn:hover{transform:translateY(-2px); box-shadow:0 18px 34px -8px rgba(168,95,40,0.65);}
-.heroCta{margin-top:40px;}
+.heroCta{margin-top:30px;}
 
 .heroPhotoWrap{
   position:relative;
@@ -458,7 +458,6 @@
 
 .audienceItem:hover{
   transform:translateY(-6px);
-  box-shadow:var(--shadow-soft);
 }
 .iframe {
   box-shadow: var(--shadow-soft);
@@ -678,7 +677,7 @@
   width: 100%;
 
   border: 1px solid rgba(148, 126, 110, 0.22);
-  background-color: var(--background-color);
+  background-color: #FFFBF5;
 
   transition:
     background-color 0.3s ease,
@@ -690,6 +689,9 @@
   background-color: #fff4e5;
   border-color: rgba(148, 126, 110, 0.25);
 }
+.cardFaq[open] svg {
+  background-color: #fff4e5;
+}
 
 .cardFaq summary {
   position: relative;
@@ -700,13 +702,13 @@
 
   min-height: 115px;
 
-  padding: 30px 30px 30px 30px;
+  padding: 43px;
 
   cursor: pointer;
   list-style: none;
 
   font-family: var(--font-merriweather);
-  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
   font-weight: 400;
   line-height: 120%;
 
@@ -719,29 +721,18 @@
   display: none;
 }
 
+.cardFaq summary svg {
+  width: 45px;
+  height: 45px;
+  background-color: #FFFBF5;
+  border: 1.9px solid var(--terracotta);
+  border-radius: 8px;
+  padding: 7px 8px;
+}
+
+
 .cardFaq summary::after {
-  content: "↗";
-
-  flex-shrink: 0;
-
-  width: 44px;
-  height: 44px;
-
-  margin-left: 30px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border: 1px solid var(--orange);
-  border-radius: 10px;
-
-  color: var(--orange);
-
-  font-family: Arial, sans-serif;
-  font-size: 1.25rem;
-  font-weight: 300;
-
+  
   transition:
     background-color 0.25s ease,
     color 0.25s ease,
@@ -749,7 +740,6 @@
 }
 
 .cardFaq[open] summary::after {
-  content: "↘";
 
   background: var(--orange);
   color: #fff;
@@ -766,7 +756,7 @@
   max-width: 700px;
 
   margin: 0;
-  padding: 0 30px 32px;
+  padding: 0 43px 32px 43px;
 
   color: var(--color-p);
 
@@ -801,7 +791,7 @@
   max-width:480px;
 }
 .finalCopy p{
-  margin-top:20px;
+  margin-top:30px;
   max-width:400px;
   color:var(--color-p);
   font-size: 1.1rem;
@@ -1113,6 +1103,15 @@
     line-height: 115%;
   }
 
+  .faqh1 {
+    max-width: 200px;
+  }
+
+  .cardFaq summary svg {
+  width: 35px;
+  height: 35px;
+}
+
   .Faq {
   padding: 80px 0 90px;
 }
@@ -1138,11 +1137,13 @@
 
 .cardFaq summary {
   min-height: 90px;
-  padding: 28px 20px;
+  padding: 28px 25px;
   gap: 30px;
 
-  font-size: 1.15rem;
+  font-size: 1.08rem;
 }
+
+
 
 .cardFaq summary::after {
   width: 34px;
@@ -1156,6 +1157,11 @@
 .cardFaq p {
   padding: 0 20px 25px;
   font-size: 0.95rem;
+}
+
+.audienceItem:hover{
+  transform:none;
+  box-shadow:none;
 }
 
   .finalGrid {
