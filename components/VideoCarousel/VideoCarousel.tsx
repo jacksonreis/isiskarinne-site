@@ -102,6 +102,7 @@ export default function VideoCarousel() {
               }}
               src={video.src}
               playsInline
+              controls={false}
               preload="metadata"
               onClick={() => handleVideoClick(index)}
               onEnded={() => handleVideoEnded(index)}

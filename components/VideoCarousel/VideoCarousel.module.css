@@ -12,7 +12,7 @@
   gap: 20px;
   width: max-content;
 
-  animation: scroll 90s linear infinite;
+  animation: scroll 40s linear infinite;
 }
 
 @media (max-width:640px) {
