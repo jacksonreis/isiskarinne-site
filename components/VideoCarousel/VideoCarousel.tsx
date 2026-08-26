@@ -101,6 +101,7 @@ export default function VideoCarousel() {
                 videoRefs.current[index] = element;
               }}
               src={video.src}
+              poster="video.poster"
               playsInline
               controls={false}
               preload="metadata"
