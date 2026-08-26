@@ -6,27 +6,27 @@ import styles from "./VideoCarousel.module.css";
 const videos = [
   {
     id: 1,
-    src: "/videos/reel1.mp4",
+    src: "https://res.cloudinary.com/igdhxud9/video/upload/v1787703392/reel1.mp4",
     poster: "/imagens/cap1.jpg",
   },
   {
     id: 2,
-    src: "/videos/reel2.mp4",
+    src: "https://res.cloudinary.com/igdhxud9/video/upload/v1787703377/reel2.mp4",
     poster: "/imagens/cap2.jpg",
   },
   {
     id: 3,
-    src: "/videos/reel3.mp4",
+    src: "https://res.cloudinary.com/igdhxud9/video/upload/v1787703374/reel3.mp4",
     poster: "/imagens/cap3.jpg",
   },
   {
     id: 4,
-    src: "/videos/reel4.mp4",
+    src: "https://res.cloudinary.com/igdhxud9/video/upload/v1787703378/reel4.mp4",
     poster: "/imagens/cap4.jpg",
   },
   {
     id: 5,
-    src: "/videos/reel5.mp4",
+    src: "https://res.cloudinary.com/igdhxud9/video/upload/v1787703381/reel5.mp4",
     poster: "/imagens/cap5.jpg",
   },
 ];

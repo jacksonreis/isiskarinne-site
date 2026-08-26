@@ -75,7 +75,7 @@
 /* ============ HERO ============ */
 .hero{
   position:absolute;
-  background: url('/imagens/Pc1.webp');
+  background: url('https://res.cloudinary.com/igdhxud9/image/upload/v1787704810/Pc1.webp');
   align-items: center;
   display: flex;
   overflow:hidden;
@@ -282,17 +282,17 @@
 }
 
 .cardbg1 {
-  background: linear-gradient(  #ffffff00 20%, #ffe6a2 70%), url('/imagens/baby1.webp');
+  background: linear-gradient(  #ffffff00 20%, #FBEDD7 70%), url('/imagens/baby1.webp');
   background-position: center;
   background-size: cover;
 }
 .cardbg2 {
-  background: linear-gradient(  #ffffff00 20%, #ffe6a2 70%), url('/imagens/baby2.webp');
+  background: linear-gradient(  #ffffff00 20%, #FBEDD7 70%), url('/imagens/baby2.webp');
   background-position: center;
   background-size: cover;
 }
 .cardbg3 {
-  background: linear-gradient(  #ffffff00 20%, #ffe6a2 70%), url('/imagens/baby3.webp');
+  background: linear-gradient(  #ffffff00 20%, #FBEDD7 70%), url('/imagens/baby3.webp');
   background-position: center;
   background-size: cover;
 }
@@ -354,7 +354,7 @@
 
 /* ============ ABOUT ============ */
 .about{
-  background: url('/imagens/Pc2.webp');
+  background: url('https://res.cloudinary.com/igdhxud9/image/upload/v1787704811/Pc2.webp');
   background-position: center;
   background-size: cover;
   padding: 170px 0;
@@ -441,24 +441,32 @@
 }
 .audienceTitle{margin-bottom:50px;}
 .audienceGrid{
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    display: grid;
 
-  overflow: hidden;             /* opcional, se quiser controlar o "traço" entre os cards */
+           /* opcional, se quiser controlar o "traço" entre os cards */
 /*  background-color: var(--line);  usa o gap como linha divisória */
 }
 .audienceItem{
   border: 1px solid var(--line);
   min-width: 0;
-  padding: 60px 35px;
-  background-color: var(--background-color);
+  padding: 180px 26px 35px 26px;
+  background: linear-gradient(  #ffffff00 -70%, #ffe6a2 60%), url('/imagens/ft2.webp');
+  background-position: center;
+  background-size: cover;
   transition: transform .25s ease, box-shadow .25s ease;
 }
 
 .audienceItem:hover{
   transform:translateY(-6px);
+  box-shadow: var(--shadow-soft);
 }
+
+.audienceItem svg {
+  
+}
+
 .iframe {
   box-shadow: var(--shadow-soft);
  /* max-width: 545px;*/
@@ -475,28 +483,40 @@
 
 
 
-/*
+
 .audienceItem1 {
-  background: linear-gradient(  #ffffff00 -10%, #FBEDD7 95%), url('/imagens/ft1.webp');
+  background: linear-gradient(  #ffffff00 -10%, #FBEDD7 75%), url('/imagens/ft1.webp');
   background-position: center;
   background-size: cover;
+
+  border: 1px solid transparent;
+  border-image: var(--linear-gold) 1;
 }
 .audienceItem2 {
-  background: linear-gradient(  #ffffff00 -10%, #FBEDD7 95%), url('/imagens/ft2.webp');
+  background: linear-gradient(  #ffffff00 -10%, #FBEDD7 75%), url('/imagens/ft2.webp');
   background-position: center;
   background-size: cover;
+
+  border: 1px solid transparent;
+  border-image: var(--linear-gold) 1;
 }
 .audienceItem3 {
-  background: linear-gradient(  #ffffff00 -10%, #FBEDD7 95%), url('/imagens/ft4.webp');
+  background: linear-gradient(  #ffffff00 -10%, #FBEDD7 75%), url('/imagens/ft4.webp');
   background-position: center;
   background-size: cover;
+
+  border: 1px solid transparent;
+  border-image: var(--linear-gold) 1;
 }
 .audienceItem4 {
-  background: linear-gradient(  #ffffff00 -10%, #FBEDD7 95%), url('/imagens/ft3.webp');
+  background: linear-gradient(  #ffffff00 -10%, #FBEDD7 75%), url('/imagens/ft3.webp');
   background-position: center;
   background-size: cover;
+
+  border: 1px solid transparent;
+  border-image: var(--linear-gold) 1;
 }
-*/
+
 
 .audienceItem p{
   font-size:1.05rem;
@@ -768,7 +788,7 @@
 /* ============ FINAL CTA ============ */
 .finalCta{
   position:relative;
-  background:url('/imagens/Pc3.webp');
+  background:url('https://res.cloudinary.com/igdhxud9/image/upload/v1787704814/Pc3.webp');
   background-position: center center;
   background-size: cover;
   display: flex;
@@ -905,7 +925,7 @@
     }
 
   .hero {
-    background: url('/imagens/t1.webp');
+    background: url('https://res.cloudinary.com/igdhxud9/image/upload/v1787704816/t1.webp');
     background-position: center center;
     background-size: cover;
   }
@@ -929,7 +949,7 @@
   }
 
   .about {
-    background: url('/imagens/t2.webp');
+    background: url('https://res.cloudinary.com/igdhxud9/image/upload/v1787704819/t2.webp');
     background-position: center;
     background-size: cover;
   }
@@ -947,7 +967,7 @@
   }
 
   .finalCta{
-  background: url('/imagens/t3.webp');
+  background: url('https://res.cloudinary.com/igdhxud9/image/upload/v1787704821/t3.webp');
   background-size: cover;
   background-position: center;
   }
