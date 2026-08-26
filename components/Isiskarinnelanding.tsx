@@ -144,7 +144,7 @@ export default function IsisKarinneLanding() {
           </div>
           
           <div className={styles.cardRow}>
-            <AnimateIn direction="fade" delay={0.6} once={false} className={styles.cardWrapper}>
+            <AnimateIn direction="fade" delay={0.6}  className={styles.cardWrapper}>
             <div className={`${styles.card} ${styles.cardbg1}`}>
               <div className={styles.iconCircle}>
                 <svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
@@ -157,7 +157,7 @@ export default function IsisKarinneLanding() {
               </p>
             </div>
             </AnimateIn>
-            <AnimateIn direction="fade" delay={0.6} once={false} className={styles.cardWrapper}>
+            <AnimateIn direction="fade" delay={0.6}  className={styles.cardWrapper}>
             <div className={`${styles.card} ${styles.cardbg2}`}>
               <div className={styles.iconCircle}>
                 <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M6 6l1 12a2 2 0 002 2h6a2 2 0 002-2l1-12M9 10v6M15 10v6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
@@ -170,7 +170,7 @@ export default function IsisKarinneLanding() {
               </p>
             </div>
             </AnimateIn>
-            <AnimateIn direction="fade" delay={0.6} once={false} className={styles.cardWrapper}>
+            <AnimateIn direction="fade" delay={0.6}  className={styles.cardWrapper}>
             <div className={`${styles.card} ${styles.cardbg3}`}>
               <div className={styles.iconCircle}>
                 <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" strokeWidth="1.6" /><path d="M8 9h8M8 13h5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /></svg>
@@ -308,32 +308,32 @@ export default function IsisKarinneLanding() {
             </AnimateIn>
           </div>
           <div className={styles.audienceGrid}>
-            <AnimateIn direction="fade" delay={0.6} once={false} className={styles.cardWrapper}>
+            <AnimateIn direction="fade" delay={0.6}  className={styles.cardWrapper}>
             <div className= {`${styles.audienceItem} ${styles.audienceItem1}`}>
               <div className={styles.iconAcomp}>
-                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="var(--ci-primary-color, #c9793a)" d="M224,144a64,64,0,1,0-64-64A64.072,64.072,0,0,0,224,144Zm0-96a32,32,0,1,1-32,32A32.036,32.036,0,0,1,224,48Z"></path> <path fill="var(--ci-primary-color, #c9793a)" d="M353.959,251.37c-15.021-16.9-35.063-27.659-62.61-33.506L266.551,160H178.123L152,342.863V400h56v96h96V400h80V352C384,307.028,374.174,274.112,353.959,251.37ZM352,368H272v96H240V368H184V345.137L205.877,192h39.572l23.291,54.344,8.629,1.438c24.5,4.083,41.233,11.979,52.672,24.848C344.817,289.253,352,315.215,352,352Z"></path> </g></svg>
+              {/*  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="var(--ci-primary-color, #c9793a)" d="M224,144a64,64,0,1,0-64-64A64.072,64.072,0,0,0,224,144Zm0-96a32,32,0,1,1-32,32A32.036,32.036,0,0,1,224,48Z"></path> <path fill="var(--ci-primary-color, #c9793a)" d="M353.959,251.37c-15.021-16.9-35.063-27.659-62.61-33.506L266.551,160H178.123L152,342.863V400h56v96h96V400h80V352C384,307.028,374.174,274.112,353.959,251.37ZM352,368H272v96H240V368H184V345.137L205.877,192h39.572l23.291,54.344,8.629,1.438c24.5,4.083,41.233,11.979,52.672,24.848C344.817,289.253,352,315.215,352,352Z"></path> </g></svg> */}
               </div>
               <h3>Gestantes</h3>
               <p>Nutrição equilibrada para uma gestação saudável.</p>
             </div>
             </AnimateIn>
-            <AnimateIn direction="up" delay={0.6} once={false} className={styles.cardWrapper}>
+            <AnimateIn direction="up" delay={0.6}  className={styles.cardWrapper}>
             <div className= {`${styles.audienceItem} ${styles.audienceItem2}`}>
               <div className={styles.iconAcomp}>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+              {/*  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 0 1-.657.643 48.39 48.39 0 0 1-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 0 1-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 0 0-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 0 1-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 0 0 .657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 0 1-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 0 0 5.427-.63 48.05 48.05 0 0 0 .582-4.717.532.532 0 0 0-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 0 0 .658-.663 48.422 48.422 0 0 0-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 0 1-.61-.58v0Z" />
-                </svg>
+                </svg> */}
               </div>
               <h3>Tea, Tdah, Down</h3>
-              <p>Preparação nutricional para seu filho.</p>
+              <p>Preparação nutricional pensada e especializada para seu filho.</p>
             </div>
             </AnimateIn>
             
-            <AnimateIn direction="up" delay={0.6} once={false} className={styles.cardWrapper}>
+            <AnimateIn direction="up" delay={0.6}  className={styles.cardWrapper}>
             <div className= {`${styles.audienceItem} ${styles.audienceItem4} ${styles.noBorderRight}`}>
                <div className={styles.iconAcomp}>
-                <svg height="200px" width="200px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512"  fill="#c9793a"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M288.209,331.768c-13.486,0-25.843-2.991-37.793-5.891c-11.956-2.888-24.313-5.885-37.688-5.885 c-10.64,0-20.838,1.883-31.166,5.753l-4.05,1.509V445.54c0,3.696,1.032,7.11,3.08,10.156c1.974,2.907,4.811,5.254,8.003,6.604 c2.257,0.948,4.57,1.419,7.068,1.419h120.653c3.704-0.007,7.117-1.046,10.15-3.088c2.914-1.959,5.254-4.805,6.611-8.017 c0.941-2.222,1.412-4.597,1.412-7.054V320.324l-8.619,3.565C313.02,329.186,300.697,331.768,288.209,331.768z"></path> <path d="M381.115,200.834c0.028-4.888-0.215-21.71-4.458-32.759c-5.303-13.777-19.322-35.134-34.892-47.581 c-5.096-4.085-10.911-8.19-17.065-12.538c-7.304-5.157-19.98-14.116-25.255-19.716c0.146-0.235,0.298-0.471,0.443-0.686 c4.05-6.265,10.841-16.739,10.841-32.815C310.729,24.563,286.18,0,256.003,0c-30.184,0-54.732,24.563-54.732,54.74 c0,16.068,6.791,26.55,10.841,32.815c0.145,0.215,0.298,0.45,0.45,0.686c-5.282,5.593-17.958,14.559-25.262,19.716 c-6.148,4.348-11.97,8.453-17.072,12.538c-15.563,12.454-29.588,33.811-34.885,47.581c-4.236,11.049-4.479,27.871-4.458,32.759 l0.07,11.603h-0.07v235.719c0,8.626,1.696,16.982,5.061,24.86c4.866,11.402,12.924,21.122,23.295,28.08 c10.62,7.13,23.047,10.904,35.93,10.904h121.636c8.674,0,17.1-1.689,25.02-5.026c11.506-4.833,21.295-12.822,28.294-23.123 c7.2-10.55,11-22.894,10.994-35.694V212.437h-0.07L381.115,200.834z M155.731,175.905c4.209-10.952,16.151-28.772,28.135-38.367 c17.051-13.632,48.163-31.305,51.389-45.269c3.136-13.61-12.15-18.45-12.15-37.529c0-18.18,14.726-32.904,32.898-32.904 c18.166,0,32.898,14.725,32.898,32.904c0,19.08-15.293,23.919-12.157,37.529c3.226,13.964,34.338,31.638,51.389,45.269 c11.984,9.595,23.926,27.415,28.135,38.367c3.109,8.072,3.012,24.812,3.012,24.812H152.72 C152.72,200.717,152.623,183.977,155.731,175.905z M359.653,233.732v16.373v198.051c0,5.753-1.128,11.319-3.364,16.553 c-3.233,7.615-8.612,14.094-15.542,18.74c-7.089,4.742-15.376,7.248-23.954,7.255H195.206c-5.788,0-11.402-1.128-16.671-3.343 c-7.67-3.213-14.199-8.543-18.879-15.424c-4.784-7.034-7.304-15.259-7.31-23.78V250.105v-16.373v-11.18h0.374h206.56h0.374V233.732 z"></path> </g> </g>
-                </svg>
+              {/*  <svg height="200px" width="200px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512"  fill="#c9793a"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M288.209,331.768c-13.486,0-25.843-2.991-37.793-5.891c-11.956-2.888-24.313-5.885-37.688-5.885 c-10.64,0-20.838,1.883-31.166,5.753l-4.05,1.509V445.54c0,3.696,1.032,7.11,3.08,10.156c1.974,2.907,4.811,5.254,8.003,6.604 c2.257,0.948,4.57,1.419,7.068,1.419h120.653c3.704-0.007,7.117-1.046,10.15-3.088c2.914-1.959,5.254-4.805,6.611-8.017 c0.941-2.222,1.412-4.597,1.412-7.054V320.324l-8.619,3.565C313.02,329.186,300.697,331.768,288.209,331.768z"></path> <path d="M381.115,200.834c0.028-4.888-0.215-21.71-4.458-32.759c-5.303-13.777-19.322-35.134-34.892-47.581 c-5.096-4.085-10.911-8.19-17.065-12.538c-7.304-5.157-19.98-14.116-25.255-19.716c0.146-0.235,0.298-0.471,0.443-0.686 c4.05-6.265,10.841-16.739,10.841-32.815C310.729,24.563,286.18,0,256.003,0c-30.184,0-54.732,24.563-54.732,54.74 c0,16.068,6.791,26.55,10.841,32.815c0.145,0.215,0.298,0.45,0.45,0.686c-5.282,5.593-17.958,14.559-25.262,19.716 c-6.148,4.348-11.97,8.453-17.072,12.538c-15.563,12.454-29.588,33.811-34.885,47.581c-4.236,11.049-4.479,27.871-4.458,32.759 l0.07,11.603h-0.07v235.719c0,8.626,1.696,16.982,5.061,24.86c4.866,11.402,12.924,21.122,23.295,28.08 c10.62,7.13,23.047,10.904,35.93,10.904h121.636c8.674,0,17.1-1.689,25.02-5.026c11.506-4.833,21.295-12.822,28.294-23.123 c7.2-10.55,11-22.894,10.994-35.694V212.437h-0.07L381.115,200.834z M155.731,175.905c4.209-10.952,16.151-28.772,28.135-38.367 c17.051-13.632,48.163-31.305,51.389-45.269c3.136-13.61-12.15-18.45-12.15-37.529c0-18.18,14.726-32.904,32.898-32.904 c18.166,0,32.898,14.725,32.898,32.904c0,19.08-15.293,23.919-12.157,37.529c3.226,13.964,34.338,31.638,51.389,45.269 c11.984,9.595,23.926,27.415,28.135,38.367c3.109,8.072,3.012,24.812,3.012,24.812H152.72 C152.72,200.717,152.623,183.977,155.731,175.905z M359.653,233.732v16.373v198.051c0,5.753-1.128,11.319-3.364,16.553 c-3.233,7.615-8.612,14.094-15.542,18.74c-7.089,4.742-15.376,7.248-23.954,7.255H195.206c-5.788,0-11.402-1.128-16.671-3.343 c-7.67-3.213-14.199-8.543-18.879-15.424c-4.784-7.034-7.304-15.259-7.31-23.78V250.105v-16.373v-11.18h0.374h206.56h0.374V233.732 z"></path> </g> </g>
+                </svg> */}
               </div>
               <h3>Introdução Alimentar e Seletividade</h3>
               <p>Orientação prática para a primeira comida e para crianças seletivas.</p>
@@ -343,6 +343,16 @@ export default function IsisKarinneLanding() {
         </div>
       </section>
 
+      <section className={styles.reels}>
+        <div className={styles.container}>
+        <h2 className={styles.eyebrow}>
+                Informações que valem ouro
+        </h2>
+        <p className={styles.lede}>
+          Vale a pena conferir as dicas de uma nutricionista que entende a alimentação correta o seu filho.
+        </p>
+        </div>
+      </section>
       <VideoCarousel />
       
       
@@ -414,28 +424,28 @@ export default function IsisKarinneLanding() {
           </p>
           </AnimateIn>
           <div className={styles.changesRow}>
-            <AnimateIn direction="fade" delay={0.6} once={false} className={styles.cardWrapper}>
+            <AnimateIn direction="fade" delay={0.6}  className={styles.cardWrapper}>
             <div className={styles.changeItem}>
               <div className={styles.changeNum} style={{ fontFamily: "var(--font-merriweather)" }}>1</div>
               <h3>Plano 100% individual</h3>
               <p>Nada de orientação genérica de internet. Cada plano é montado a partir da sua fase, seus exames e a rotina da sua família.</p>
             </div>
             </AnimateIn>
-            <AnimateIn direction="fade" delay={0.6} once={false} className={styles.cardWrapper}>
+            <AnimateIn direction="fade" delay={0.6}  className={styles.cardWrapper}>
             <div className={styles.changeItem}>
               <div className={styles.changeNum} style={{ fontFamily: "var(--font-merriweather)" }}>2</div>
               <h3>Foco na realidade da rotina</h3>
               <p>Orientações realistas para quem tem pouco tempo, noites mal dormidas e uma casa cheia — sem cobranças que não cabem no seu dia a dia.</p>
             </div>
             </AnimateIn>
-            <AnimateIn direction="fade" delay={0.6} once={false} className={styles.cardWrapper}>
+            <AnimateIn direction="fade" delay={0.6}  className={styles.cardWrapper}>
             <div className={styles.changeItem}>
               <div className={styles.changeNum} style={{ fontFamily: "var(--font-merriweather)" }}>3</div>
               <h3>Suplementação orientada</h3>
               <p>Indicação de suplementos apenas quando fazem sentido clínico, com base em evidência científica atual para cada fase.</p>
             </div>
             </AnimateIn>
-            <AnimateIn direction="fade" delay={0.6} once={false} className={styles.cardWrapper}>
+            <AnimateIn direction="fade" delay={0.6}  className={styles.cardWrapper}>
             <div className={styles.changeItem}>
               <div className={styles.changeNum} style={{ fontFamily: "var(--font-merriweather)" }}>4</div>
               <h3>Suporte entre consultas</h3>

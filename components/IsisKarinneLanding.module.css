@@ -339,6 +339,7 @@
   font-family: var(--font-dm-sans);
   font-size:1.1rem;
   margin-bottom:10px;
+  line-height: 115%;
 }
 
 .textForm {
@@ -437,7 +438,7 @@
 /* ============ PARA QUEM ============ */
 .audience{
   background:var(--background-color);
-  padding:150px 0;
+  padding:120px 0;
 }
 .audienceTitle{margin-bottom:50px;}
 .audienceGrid{
@@ -449,12 +450,14 @@
 /*  background-color: var(--line);  usa o gap como linha divisória */
 }
 .audienceItem{
-  border: 1px solid var(--line);
-  min-width: 0;
-  padding: 180px 26px 35px 26px;
-  background: linear-gradient(  #ffffff00 -70%, #ffe6a2 60%), url('/imagens/ft2.webp');
-  background-position: center;
-  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  
+  background:var(--background-color);
+  border: 1px solid transparent;
+  border-image: var(--linear-gold) 1;
+  padding:190px 26px 55px 26px;
   transition: transform .25s ease, box-shadow .25s ease;
 }
 
@@ -463,29 +466,8 @@
   box-shadow: var(--shadow-soft);
 }
 
-.audienceItem svg {
-  
-}
-
-.iframe {
-  box-shadow: var(--shadow-soft);
- /* max-width: 545px;*/
-  margin: auto;
-  width: 70%;
-}
-
-.iframe iframe {
-  width: 100%;
-  height: 550px; /* ajuste conforme necessário */
-  display: block;
-  align-items: center;
-}
-
-
-
-
 .audienceItem1 {
-  background: linear-gradient(  #ffffff00 -10%, #FBEDD7 75%), url('/imagens/ft1.webp');
+  background: linear-gradient(  #ffffff00 -20%, #FBEDD7 75%), url('/imagens/ft1.webp');
   background-position: center;
   background-size: cover;
 
@@ -493,15 +475,16 @@
   border-image: var(--linear-gold) 1;
 }
 .audienceItem2 {
-  background: linear-gradient(  #ffffff00 -10%, #FBEDD7 75%), url('/imagens/ft2.webp');
+  border: 1px solid transparent;
+  border-image: var(--linear-gold) 1;
+  background: linear-gradient(  #ffffff00 -20%, #FBEDD7 75%), url('/imagens/ft2.webp');
   background-position: center;
   background-size: cover;
 
-  border: 1px solid transparent;
-  border-image: var(--linear-gold) 1;
+  
 }
 .audienceItem3 {
-  background: linear-gradient(  #ffffff00 -10%, #FBEDD7 75%), url('/imagens/ft4.webp');
+  background: linear-gradient(  #ffffff00 -20%, #FBEDD7 75%), url('/imagens/ft4.webp');
   background-position: center;
   background-size: cover;
 
@@ -524,12 +507,19 @@
   line-height: 140%;
 }
 
-/* ============ RESULTS CAROUSEL ============ */
+.reels {
+  background:var(--background-color);
+  padding:100px 0px 50px 0px;
+}
+
+
 .results{
   background:var(--background-color);
   padding:190px 0 40px;
   text-align:center;
 }
+
+/* ============ RESULTS CAROUSEL ============
 .carousel{
   position:relative;
   max-width:1000px;
@@ -584,6 +574,7 @@
   animation:bob 2s ease-in-out infinite;
 }
 @keyframes bob{0%,100%{transform:translateY(0);}50%{transform:translateY(6px);}}
+ */
 
 /* ============ WHAT CHANGES ============ */
 .changes{
@@ -966,6 +957,11 @@
     margin-top: 20px;
   }
 
+  .reels {
+    padding-top: 50px;
+    padding-bottom: 27px;
+  }
+
   .finalCta{
   background: url('https://res.cloudinary.com/igdhxud9/image/upload/v1787704821/t3.webp');
   background-size: cover;
@@ -1038,17 +1034,10 @@
   }
 
   .audienceItem {
-    padding: 40px 25px;
+    padding: 120px 25px 40px 25px;
   }
-  .audienceItem2 {
-    border-top: none;
-  }
-  .audienceItem3 {
-    border-top: none;
-  }
-  .audienceItem4 {
-    border-top: none;
-  }
+
+
 
   .heroGrid{
     padding-top: 250px;
