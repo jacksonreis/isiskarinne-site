@@ -282,17 +282,17 @@
 }
 
 .cardbg1 {
-  background: linear-gradient(  #ffffff00 20%, #FBEDD7 70%), url('/imagens/baby1.webp');
+  background: linear-gradient(  #ffffff00 5%, #FBEDD7 70%), url('/imagens/baby1.webp');
   background-position: center;
   background-size: cover;
 }
 .cardbg2 {
-  background: linear-gradient(  #ffffff00 20%, #FBEDD7 70%), url('/imagens/baby2.webp');
+  background: linear-gradient(  #ffffff00 5%, #FBEDD7 70%), url('/imagens/baby2.webp');
   background-position: center;
   background-size: cover;
 }
 .cardbg3 {
-  background: linear-gradient(  #ffffff00 20%, #FBEDD7 70%), url('/imagens/baby3.webp');
+  background: linear-gradient(  #ffffff00 5%, #FBEDD7 70%), url('/imagens/baby3.webp');
   background-position: center;
   background-size: cover;
 }
