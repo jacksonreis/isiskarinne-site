@@ -686,6 +686,7 @@
 
 .cardFaq {
   width: 85%;
+  margin: auto;
 
   border: 1px solid rgba(148, 126, 110, 0.22);
   background-color: #FFFBF5;
