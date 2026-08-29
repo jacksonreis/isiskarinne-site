@@ -15,12 +15,6 @@
   animation: scroll 40s linear infinite;
 }
 
-@media (max-width:640px) {
-  .track {
-    animation: scroll 45s linear infinite;
-  }
-}
-
 .track.paused {
   animation-play-state: paused;
 }
@@ -28,7 +22,8 @@
 .videoCard {
   position: relative;
   flex: 0 0 280px;
-  aspect-ratio: 9 / 16;
+  width: 220px;
+  height: 391px;
   overflow: hidden;
   border-radius: 18px;
   cursor: pointer;
@@ -44,10 +39,17 @@
 
 @keyframes scroll {
   from {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
 
   to {
-    transform: translateX(-50%);
+    transform: translate3d(calc(-50% - 8px), 0, 0);
+  }
+}
+
+
+@media (max-width:640px) {
+  .track {
+    animation: scroll 45s linear infinite;
   }
 }
