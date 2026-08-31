@@ -7,27 +7,27 @@ const videos = [
   {
     id: 1,
     src: "https://res.cloudinary.com/igdhxud9/video/upload/v1787703392/reel1.mp4",
-    poster: "/imagens/cap1.jpg",
+    poster: "/imagens/cap1.png",
   },
   {
     id: 2,
     src: "https://res.cloudinary.com/igdhxud9/video/upload/v1787703377/reel2.mp4",
-    poster: "/imagens/cap2.jpg",
+    poster: "/imagens/cap2.png",
   },
   {
     id: 3,
     src: "https://res.cloudinary.com/igdhxud9/video/upload/v1787703374/reel3.mp4",
-    poster: "/imagens/cap3.jpg",
+    poster: "/imagens/cap3.png",
   },
   {
     id: 4,
     src: "https://res.cloudinary.com/igdhxud9/video/upload/v1787703378/reel4.mp4",
-    poster: "/imagens/cap4.jpg",
+    poster: "/imagens/cap4.png",
   },
   {
     id: 5,
     src: "https://res.cloudinary.com/igdhxud9/video/upload/v1787703381/reel5.mp4",
-    poster: "/imagens/cap5.jpg",
+    poster: "/imagens/cap5.png",
   },
 ];
 
