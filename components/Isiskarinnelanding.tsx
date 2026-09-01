@@ -110,7 +110,7 @@ export default function IsisKarinneLanding() {
             </AnimateIn>
             <AnimateIn direction="up" delay={0.6}>
             <div className={styles.heroCta}>
-              <a href="https://api.whatsapp.com/message/SEU_LINK_AQUI?autoload=1&app_absent=0&utm_source=ig" className={styles.btn}>
+              <a href="https://api.whatsapp.com/send/?phone=5585999963268&text&type=phone_number&app_absent=0" className={styles.btn}>
                 Agendar minha consulta
                 <svg viewBox="0 0 24 24" fill="none" width="16" height="16">
                   <path d="M5 12h14M13 6l6 6-6 6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
